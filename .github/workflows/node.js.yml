@@ -31,4 +31,4 @@ jobs:
           context: ./Reddit            
           file: ./Reddit/Dockerfile    
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/reddit-backend:latest  
+          tags: knrunner/reddit-backend:latest  
