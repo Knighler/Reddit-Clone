@@ -41,8 +41,7 @@ const io = new Server(server, {
 io.use(require("./middleware/socketAuth"));
 require('./socket')(io);
 
-(
-  async () => {
+(async () => {
   await connectDB();
   server.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
